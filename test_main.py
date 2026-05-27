@@ -9,7 +9,12 @@ def test_health():
     assert response.status_code == 200
     assert "status" in response.json()
 
-def test_predict():
+def test_predict(monkeypatch):
+    monkeypatch.setattr(
+        "main.prediction_collection.insert_one",
+        lambda document: None
+    )
+
     payload = {
         "Price": 1000,
         "Discount": 10,

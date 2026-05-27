@@ -50,6 +50,8 @@ docker-compose.override.yml
 # Model Files 
 
 *.pkl
+!sales_prediction_model.pkl
+!saved_label_encoders.pkl
 *.csv
 
 # *.joblib
