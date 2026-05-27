@@ -22,7 +22,7 @@ Add these application settings in Azure App Service > Configuration > Applicatio
 
 Add these repository secrets in GitHub > Settings > Secrets and variables > Actions:
 
-- `AZURE_WEBAPP_NAME`: your Azure Web App name, for example `retail-ai-api`
+- `AZURE_WEBAPP_NAME`: `retailaiproject`
 - `AZURE_WEBAPP_PUBLISH_PROFILE`: the publish profile XML downloaded from the Azure Web App Overview page
 
 After these are set, every push to `main` runs tests and deploys automatically.

@@ -36,7 +36,7 @@ jobs:
     needs: test
     environment:
       name: production
-      url: https://${{ secrets.AZURE_WEBAPP_NAME }}.azurewebsites.net
+      url: https://retailaiproject-e9ancpb3asb7dpce.koreacentral-01.azurewebsites.net
 
     steps:
       - name: Checkout code
